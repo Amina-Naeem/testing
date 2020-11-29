@@ -19,3 +19,7 @@ Route::get('/wishes/{id}',[WishController::class,'getWishDetails']);
 Route::get('/delete-wish/{id}',[WishController::class,'deleteWish']);
 Route::get('/update-wish/{id}',[WishController::class,'updateWish']);
 Route::post('/update-wish-data',[WishController::class,'updateWishData'])->name('wish.update');
+Route::get('/practice',function()
+{
+    return view('practice');
+});
