@@ -72,34 +72,38 @@
     <div class="col-md-6 no-gutters">
         <div class="leftside d-flex justify-content-center align-items-center container">
 
-            <table>
+            <div class="text-center">
+                <h1 class="h4 text-gray-900 mb-4"> @lang('home.update') @lang('home.wish')</h1>
+            </div>
 
-                <tr class="draggable-elements">
-                    <td><i class=" draggable" draggable="true" style="color: #ffce56;" id="from">From</i></td>
-                    <td><i class="draggable" draggable="true" style="color: #9966ff;" id="tables">Table</i></td>
-                    <td><i class=" draggable" draggable="true" style="color: #ff6384;" id="select">Select</i></td>
-                    <td ><i class=" draggable" draggable="true" style="color: #36a2eb;" id="attributes">Attribute</i></td>
+            <form method="POST" action="">
+                @csrf
+                <div class="form-group row text-gray-900">
+                    <div class="col-sm-12 mb-3 mb-sm-0">
+                        <label for="id">@lang('home.wish')@lang('home.id')</label>
+                        <input type="number" readonly id="id" name="id" class="form-control form-control-user" value="">
 
-                    <!--<td><i class=" draggable" draggable="true" style="color: #4bc0c0;" id="frog"></i></td>
-                    <i class="fas fa-horse draggable" draggable="true" style="color: #333333;" id="horse"></i>
-                    <i class="fas fa-hippo draggable" draggable="true" style="color: #ff9f40;" id="hippo"></i>
-                    <i class="fas fa-spider draggable" draggable="true" style="color: #ff99cc;" id="spider"></i> -->
+                    </div>
+                </div>
+                <div class="form-group text-gray-900">
+                    <label for="wish">@lang('home.wish')</label>
+                    <p  name="wish"  class="form-control form-control-user" rows="3"><b></b></p>
+                </div>
+                <div class="form-group row text-gray-900">
+                    <div class="col-sm-12 mb-3 mb-sm-0">
+                        <label for="fulfilled">@lang('home.fulfilled')</label>
+                        <input name="fulfilled" id="fulfilled" value="" type="text" class="form-control form-control-user"  required placeholder="@lang('home.yes')/@lang('home.nope')/@lang('home.other')"  >
 
-                </tr>
-
-                <tr class="droppable-elements">
-                    <!-- <td class="droppable" data-draggable-id="frog"><p>Frog</p></td>-->
-                    <td class="droppable" data-draggable-id="select"><p>Select</p></td>
-                    <td class="droppable" data-draggable-id="attributes"><p>Attribute</p></td>
-                    <td class="droppable" data-draggable-id="from"><p>From</p></td>
-
-                    <td class="droppable" data-draggable-id="tables"><p>Table</p></td>
-
-                    <!-- <div class="droppable" data-draggable-id="spider"><span>Spider</span></div>
-                    <div class="droppable" data-draggable-id="horse"><span>Horse</span></div>
-                    <div class="droppable" data-draggable-id="hippo"><span>Hippo</span></div> -->
-                </tr>
-            </table>
+                    </div>
+                </div>
+                <button type="submit"  class="btn btn-success btn-primary btn-user btn-block">
+                    @lang('home.update') @lang('home.wish')
+                </button>
+                <div class="p-2 form-group row">
+                    <hr>
+                    <a href="/" class="btn btn-success p-1">@lang('home.back')</a>
+                </div>
+            </form>
 
         </div>
     </div>

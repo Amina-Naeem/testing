@@ -197,7 +197,7 @@
       <workItem from="1605115198591" duration="10789000" />
       <workItem from="1605265507951" duration="44969000" />
       <workItem from="1605517212313" duration="5720000" />
-      <workItem from="1606574289857" duration="4150000" />
+      <workItem from="1606574289857" duration="4861000" />
     </task>
     <servers />
   </component>
@@ -294,6 +294,11 @@
           <url>file://$PROJECT_DIR$/../testing/resources/views/welcome.blade.php</url>
           <line>257</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/../testing/resources/views/update-wish.blade.php</url>
+          <line>36</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
